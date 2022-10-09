@@ -13,7 +13,7 @@ function Home() {
 
  const [feedbacks, setFeedback]=useState([]);
 useEffect(()=>{
-    fetch('http://localhost:3000/feedback')
+    fetch('https://hemingways-backend.herokuapp.com/feedback')
     .then(res=>res.json())
     .then(data=>setFeedback(data))
 },[])
