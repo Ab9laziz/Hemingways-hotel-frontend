@@ -13,7 +13,8 @@ body{
 
 #header{
    position: relative;
-   right: 15rem;
+   right: 14rem;
+   font-family: 'Montserrat', sans-serif;
    
 }
 nav{
@@ -34,12 +35,12 @@ nav{
     color: black;
 }
 .navlink:hover{
-    color: green;
+    color: #c1a267;
 }
 
 .navlink:focus{
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #c1a267;
     text-decoration-thickness: 4px;
     text-underline-offset: 8px;
 }
@@ -57,16 +58,337 @@ nav{
     right: 3rem;
     width: 10rem;
     height: 3.5rem;
-    /* border-radius:40px; */
-    background-color: #FFD372;
+    background-color: #c1a267;
+    border: solid 1px #c1a267;
+    color: white;
 }
 
 #navButton:hover{
-    background-color: rgb(89, 171, 89);
+    background-color: #fbd58a;
 }
 
 #navButton:focus{
-    background-color: rgb(89, 171, 89);
+    background-color: #fbd58a;
+    font-family:'Poppins', sans-serif;
+}
+                        /* Home-section 1 */
+.container1{
+    height:4750px;
+}
+/* .container2{
+   margin-bottom: 100px;
+
+} */
+.container{
+    height: 13%;
+}
+.container3 {
+   width: 40%;
+   text-align:center;
+   margin:auto;
+   height: 50%;
+   font-size: 1.7rem;
+   font-family: 'Montserrat', sans-serif;
+   padding-top: 40px;
+   
+
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.container4 {
+    width: 30%;
+    text-align: justify;
+    height: 50%;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    left: 120px;
+
+ }
+ .container5{
+    width: 30%;
+    text-align: justify;
+    height: 50%;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    right: 120px;
+ }
+
+ .container6{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-top: 100px;
+    background: url('../images/bg-butlers-2020.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:22%;
+ }
+ .container7{
+    color: #ffffff;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    right: 70px;
+ }
+ .container7 h1{
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 10px 0;
+ }
+ .container7 h2{
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: 100;
+ }
+ .btn{
+   padding: 13px;
+   background-color: #c1a267;
+   color: inherit;
+   font-weight: 900;
+   font-family:'Poppins', sans-serif;
+   width: 25%;
+   border: solid 1px #c1a267;
+   
+ }
+ .btn:hover{
+    background-color: #fbd58a;
+  }
+ 
+                                            /* Rooms */
+.container8{
+    width: 50%;
+    margin: 200px auto 0 auto;
+    font-family:'Montserrat', sans-serif ;
+}
+.container8 img{
+    float: right;
+}
+
+.cont9{
+    width: 40%;
+    text-align: justify;
+}
+.btn1{
+    padding: 13px;
+    background-color: #c1a267;
+    color: inherit;
+    font-weight: 900;
+    font-family:'Poppins', sans-serif;
+    width: 50%;
+    color: white;
+    border: white 1px solid;
+    
+  }
+.btn1:hover{
+     background-color: #fbd58a;
+}
+
+                                     /* Feedback section */
+.cont2{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    height: 12%;
+    margin: 100px;
+}
+.fcontainer{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 100px;
+}
+.fcontainer h1{
+ font-family:'Poppins', sans-serif ;
+}
+.feedbackCard img{
+    height: 50px;
+    width: 35;
+}
+.cont3{
+    display: flex;
+    justify-content: center;
+}
+#feedback{
+    text-align: center;
+    height: 1000px;
+}
+#feedback h1{
+    font-size: 2.8rem;
+}
+.cont3 form{
+    border: 1px solid black;
+    height: 600px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.5rem;
+    text-align: left;
+}
+#rating{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#comment{
+    position: relative;
+    left: 150px;
+    width: 60%;
+    padding: 10px;
+}
+#comm{
+    position: relative;
+    bottom: 100px;
+}
+#name{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#imgUrl{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    padding: 10px;
+}
+#submit1{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit1:hover{
+    background-color: #fbd58a;
+}
+
+                                    /* Book */
+#book{
+    height: 1000px;
+    text-align: center;  
+}
+#book h1{
+    font-size: 2.8rem;
+}
+.cont4{
+    display: flex;
+    justify-content: center;
+}
+.cont4 form{
+    border: 1px solid black;
+    height: 600px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#fname{
+    padding: 10px;
+    position: relative;
+    left: 80px;
+    width: 40%;
+}
+#lname{
+    padding: 10px;
+    position: relative;
+    left: 80px;
+    width: 40%;
+}
+#email{
+    padding: 10px;
+    position: relative;
+    left: 140px;
+    width: 40%;
+}
+#number{
+    padding: 10px;
+    position: relative;
+    left: 28px;
+    width: 40%;
+}
+#type{
+    padding: 10px;
+    position: relative;
+    left: 28px;
+    width: 45%;
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif ;
+}
+#submit2{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit2:hover{
+    background-color: #fbd58a;
+}
+                                        /* offers and discounts */
+.cont5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.cont5 h1{
+    font-size: 2.8rem;
+    text-decoration: underline;
+}
+.cont5 h2{
+    margin: 0;
+    text-decoration: underline;
+}
+.offerCard{
+    border: solid black 1px;
+    margin: 50px auto;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 5px #ebebeb;
+}
+.offerCard p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.offerCard h1{
+    font-size: 2.8rem;
+    
+}
+
+.offerCard:hover{
+    box-shadow: 10px 10px 5px 5px #cfcece;
+}
+.offerCard img{
+    width: 100%;
+    height: 400px;
+    
+}
+                                    /* Horizontal rule */
+
+hr{
+    border: solid #2C3333 20px;
+    clear:right;
+    position: relative;
+    top: 100px;
 }
 
                     /* Footer-Subscribing to newsletter */
@@ -74,15 +396,16 @@ nav{
 .container9{
     display: flex;
     /* position: relative;
-    top: 400px; */
-    height: 75vh;
+    top: 300px; */
+    height: 600px;
     justify-content: center;
-    background-color: black;
+    background-color: white;
     align-items: center;
     margin-bottom: 5px;
     margin-top: 5px;
     width: 100%;
-    color: white;
+    color: black;
+    border-top: solid 1px black;
 }
 .container10{
     text-align: center;
@@ -95,9 +418,11 @@ nav{
     font-family: 'Poppins', sans-serif;  
 }
 
-#email1{
+#eml{
    position: relative;
-   left: 31px;
+   left: 135px;
+   padding: 10px;
+   
 }
 #fname{
     position: relative;
@@ -106,35 +431,38 @@ nav{
 #submit{
     padding: 12px;
     width: 200px;
-    background-color: #3432b3;
+    background-color: #c1a267;
     color: white;
     font-size: 20px;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
     position: relative;
     left: 60px;
+    top: 20px;
+    border: #c1a267 1px solid;
 }
 .label{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
 }
 .input{
-    padding: 40px;
     width: 300px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 .input:hover{
     background-color:rgb(209, 230, 248);
 }
 #submit:hover{
-    background-color: #2C3333;
+    background-color: #fbd58a;
 }
 #form{
-    border: white solid 1px;
+    border: 1px black solid;
     padding: 50px 50px;
     border-radius: 20px;
+    width: 95%;
 }
 
                              /* Footer */
@@ -147,6 +475,7 @@ nav{
     align-items: center;
     background-color: white;
     color: black;
+    border-top: solid 1px black;
 }
 
 
@@ -215,15 +544,18 @@ nav{
     width: 25px;
     height: 25px;
     float: left;
-    margin-left: 40px;
-    margin-top: 5px;
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+
 }
 
 .fa.fa-apple{
     float: left;
-    margin-left: 15px;
-    margin-top: 40px;
     color: white;
+    position: relative;
+    top: 8px;
+    margin-left: 8px;
 }
 
 .container12 h6{
@@ -243,10 +575,10 @@ nav{
     color: white;
 }
 .container12:hover{
-    background-color: #2C3333;
+    background-color:#c1a267 ;
 }
 .container13:hover{
-    background-color: #2C3333;
+    background-color: #c1a267;
 }
 
 .container13{
@@ -287,6 +619,7 @@ nav{
 }
 .container16{
     border-top: black solid 1px;
+    border-bottom: black solid 1px;
     position: relative;
     top: 5px;
     font-family: 'Poppins', sans-serif;
