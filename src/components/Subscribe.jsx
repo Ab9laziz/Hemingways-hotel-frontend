@@ -11,7 +11,7 @@ function Subscribe(){
     })
     function handleSubmit(e){
         e.preventDefault()
-        fetch('http://localhost:3000/subscribe',{
+        fetch('https://hemingways-backend.herokuapp.com/subscribe',{
             method: "POST",
             headers: {
               "Content-Type": "application/json",
