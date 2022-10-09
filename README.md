@@ -3,8 +3,8 @@
 # Description
 This is a simple web app that will allow Hemingway hotel and suits to advertise its services, allow clients to access some of their services such as booking rooms, send them feedback  and view all their current offers.
 
-![Screenshot1]()
-![screenshot2]()
+![Screenshot1](https://github.com/Ab9laziz/Hemingways-hotel-frontend/blob/master/src/images/screenshot1.png)
+![screenshot2](https://github.com/Ab9laziz/Hemingways-hotel-frontend/blob/master/src/images/screenshot2.png)
 
 # Setup and installation instructions
 - Clone the repository to your computer from https://github.com/Ab9laziz/Hemingways-hotel-frontend
