@@ -1,19 +1,87 @@
 {
-  "posts": [
+  "booked": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "fname": "Jane ",
+      "lname": "Ngoiri",
+      "email": "adriangee@outlook.com",
+      "number": "0737347482",
+      "type": "deluxe_suites",
+      "id": 1
     }
   ],
-  "comments": [
+  "feedback": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "rating": "⭐️⭐️⭐️⭐️⭐️",
+      "comment": "great",
+      "name": "Omar",
+      "imgUrl": "https://images.unsplash.com/photo-1613876215075-276fd62c89a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": 2
+    },
+    {
+      "rating": "⭐️⭐️⭐️⭐️⭐️",
+      "comment": "Nice!!!",
+      "name": "Juweria",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEmjqBSptWz4MbjYvVZ3HIPH5nAc2dr47QiBpdvrIFK_8iE9aXAt28njuDJvOyYyPGAw&usqp=CAU",
+      "id": 3
+    },
+    {
+      "rating": "⭐️⭐️⭐️⭐️⭐️",
+      "comment": "Woi",
+      "name": "Natasha",
+      "imgUrl": "https://i0.wp.com/www.ghgossip.com/wp-content/uploads/2018/09/FotoJet-17.jpg?fit=1920%2C1440&ssl=1",
+      "id": 4
+    },
+    {
+      "rating": "⭐️⭐️⭐️⭐️⭐️",
+      "comment": "YOO! That was awesome!!1",
+      "name": "Nate",
+      "imgUrl": "https://images.unsplash.com/photo-1613457231357-a5db3bc5bd81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": 5
+    },
+    {
+      "rating": "⭐️⭐️⭐️⭐️⭐️",
+      "comment": "Wonderful!",
+      "name": "Ann",
+      "imgUrl": "https://images.unsplash.com/photo-1613457231357-a5db3bc5bd81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "id": 6
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "offers": [
+    {
+      "type": "Deluxe Suites",
+      "previousPrice": "ksh 40000",
+      "currentPrice": "ksh 30000",
+      "off": "25%",
+      "imgUrl": "https://www.hemingways-collection.com/wp-content/uploads/2020/07/HN-2020-214.1-1000x782.jpg"
+    },
+    {
+      "type": "The Executive Suites",
+      "previousPrice": "ksh 100000",
+      "currentPrice": "ksh 90000",
+      "off": "25%",
+      "imgUrl": "https://www.hemingways-collection.com/wp-content/uploads/2020/07/Executive-suite-1000x595.jpg"
+    },
+    {
+      "type": "Blixen Suites",
+      "previousPrice": "ksh 70000",
+      "currentPrice": "ksh 60000",
+      "off": "25%",
+      "imgUrl": "https://www.hemingways-collection.com/wp-content/uploads/2020/07/Pres.-suite-1000x616.jpg"
+    },
+    {
+      "type": "The Hemingways Suites",
+      "previousPrice": "ksh 80000",
+      "currentPrice": "ksh 70000",
+      "off": "25%",
+      "imgUrl": "https://www.hemingways-collection.com/wp-content/uploads/2020/07/Home-Stay-Blixen-Suite-1000x608.jpg"
+    }
+  ],
+  "subscribe": [
+    {
+      "fname": "Juweria",
+      "lname": "Hassan",
+      "eml": "ab9laziz@gmail.com",
+      "id": 1
+    }
+  ]
 }
