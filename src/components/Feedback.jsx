@@ -13,7 +13,7 @@ const[formData, setValue] =useState({
 })
 function handleSubmit(e){
     e.preventDefault();
-    fetch('http://localhost:3000/feedback',{
+    fetch('https://hemingways-backend.herokuapp.com/feedback',{
         method: "POST",
         headers: {
           "Content-Type": "application/json",
