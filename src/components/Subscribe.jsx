@@ -26,7 +26,7 @@ function Subscribe(){
             document.getElementById('subscribe').append(p);
             p.style.fontFamily="'Poppins', sans-serif";
             p.style.fontSize="40px"
-            p.innerText="Thanks you for subscribing to our news letter."
+            p.innerText="Thank you for subscribing to our news letter."
             form.remove();
     }
     function handleChange(e){

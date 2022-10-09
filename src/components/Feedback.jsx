@@ -28,7 +28,7 @@ function handleSubmit(e){
         document.getElementById('feedback').append(p);
         p.style.fontFamily="'Poppins', sans-serif";
         p.style.fontSize="40px"
-        p.innerText="Thanksfor your feedback. Hope to see you back!!!."
+        p.innerText="Thank you for your feedback. Hope to see you back!!!."
         document.querySelector('#feedback').querySelector('h2').remove();
         form.remove();
         document.getElementById('feedback').style.height='400px';

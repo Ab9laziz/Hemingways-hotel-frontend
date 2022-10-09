@@ -28,7 +28,7 @@ function handleSubmit(e){
         document.getElementById('book').append(p);
         p.style.fontFamily="'Poppins', sans-serif";
         p.style.fontSize="40px"
-        p.innerText="Thanksfor you for filling the form. An agent will soon contact you."
+        p.innerText="Thanks for filling the form. An agent will soon get intouch with you."
         document.querySelector('#book').querySelector('h2').remove();
         form.remove();
         document.getElementById('book').style.height='400px';
