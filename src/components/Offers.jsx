@@ -6,7 +6,7 @@ import "../css/style.css"
 function Offers(){
 const [offers, setOffer]=useState([]);
 useEffect(()=>{
-    fetch('http://localhost:3000/offers')
+    fetch('https://hemingways-backend.herokuapp.com/offers')
     .then(res=>res.json())
     .then(data=>setOffer(data))
 },[])
