@@ -41,8 +41,10 @@ function Footer(){
                 <div>
                     <h1 className="footerh1">Products</h1>
                     <ul>
-                        <li>Ensuite apartments</li>
-                        <li>Deluxe apartments</li>
+                        <li>The Executive suites</li>
+                        <li>The Hemingway suites</li>
+                        <li>Deluxe Suites</li>
+                        <li>Blixen Suites</li>
                         <li id="more"><Link to='#'>More ...</Link></li>
                     </ul>
                 </div>
