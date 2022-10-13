@@ -38,7 +38,7 @@ function handleChange(e){
          return {...previouState, [e.target.id]:e.target.value}
     })
 }
-console.log(formData)
+//console.log(formData)
     return(
         <div id='feedback'>
             <h1>Hope you had an awesome stay with us</h1>
