@@ -279,8 +279,16 @@ nav{
 .feedbackCard{
     border: 1px black solid;
     border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3e3e3;
 }
-
+ .feedbackCard:hover{
+    box-shadow: 10px 10px 5px #c9c8c8; 
+ }
+ .feedbackCard button{
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: red;
+ }
                                     Book
 #book{
     height: 1000px;
