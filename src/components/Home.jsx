@@ -9,31 +9,54 @@ import Subscribe from './Subscribe';
 
 function Home() {
  const match=useRouteMatch()
- console.log(match)
+ //console.log(match)
 
  const [feedbacks, setFeedback]=useState([]);
-useEffect(()=>{
-    fetch('https://hemingways-backend.herokuapp.com/feedback')
+ useEffect(()=>{
+    fetch(`https://hemingways-backend.herokuapp.com/feedback/`)
     .then(res=>res.json())
     .then(data=>setFeedback(data))
-},[])
 
- const cards=feedbacks.map((feedback)=>{
+ },[])
+
+ const cards=feedbacks.map(feedback=>{
     return (
-    <div key={feedback.id} className="feedbackCard">
+    <div key={feedback.id} className="feedbackCard" >
         <h1>{feedback.rating}</h1>
         <p>{feedback.comment}</p>
         <img src={feedback.imgUrl} alt='img' />
         <p>{feedback.name}</p>
+        <button onClick={handleDelete}  id={feedback.id}>x</button>
     </div>)
  })
 
+ //console.log(feedbacks)
+ function handleDelete(e){
+    const newfeedbacks=feedbacks.filter(item=>{
+        console.log(e.target)
+        console.log(item.id)
+       return item.id === parseInt(e.target.id)
+    })
+
+    setFeedback(newfeedbacks)
+    console.log('This is newfeedback:',newfeedbacks)
+    
+    fetch(`https://hemingways-backend.herokuapp.com/feedback/${e.target.id}`,{
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        }
+      })
+      .then(res=>res.json())
+      .then(data=>console.log(data))
+}
     return (
         <div className='container1'>
             <div className='container2'>
                 <img src={img} alt="resort" />
-                </div>
-                <div className="container">
+            </div>
+            <div className="container">
                 <div className='container3'>
                     <p>A warm welcome to Hemingways Nairobi. A luxury five Star boutique hotel in Nairobi. We pride ourselves on providing exceptional guest experiences and service, ensuring the utmost comfort and luxury.</p>
                 </div>
@@ -52,7 +75,7 @@ useEffect(()=>{
                     <h1>FOR DISCRETION</h1>
                     <h2>AND CONVENIENCE</h2>
                     <button className='btn'>BUTLER SERVICE</button>
-                </div>
+            </div>
 
             </div>
             {/*  Rooms  */}
