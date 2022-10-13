@@ -34,7 +34,7 @@ function Subscribe(){
              return {...previouState, [e.target.id]:e.target.value}
         })
     }
-    console.log(formData)
+   // console.log(formData)
     return(
 
        <div className="container9">
