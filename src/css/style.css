@@ -24,6 +24,10 @@ nav{
     height: 70px;  
     align-items:center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
 }
 
 
@@ -272,8 +276,12 @@ nav{
 #submit1:hover{
     background-color: #fbd58a;
 }
+.feedbackCard{
+    border: 1px black solid;
+    border-radius: 4px;
+}
 
-                                    /* Book */
+                                    Book
 #book{
     height: 1000px;
     text-align: center;  
