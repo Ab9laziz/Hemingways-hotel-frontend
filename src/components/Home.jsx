@@ -33,9 +33,9 @@ function Home() {
  //console.log(feedbacks)
  function handleDelete(e){
     const newfeedbacks=feedbacks.filter(item=>{
-        console.log(e.target)
-        console.log(item.id)
-       return item.id === parseInt(e.target.id)
+        // console.log(e.target)
+        // console.log(item.id)
+       return item.id !== parseInt(e.target.id)
     })
 
     setFeedback(newfeedbacks)
