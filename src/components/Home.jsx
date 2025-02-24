@@ -4,6 +4,7 @@ import deluxe from '../images/deluxe_suite.jpg';
 import { Route } from 'react-router-dom';
 import { useRouteMatch } from 'react-router-dom';
 import Subscribe from './Subscribe';
+import HalfRating from './Rating';
 
 
 
@@ -13,16 +14,16 @@ function Home() {
 
  const [feedbacks, setFeedback]=useState([]);
  useEffect(()=>{
-    fetch(`https://hemingways-backend.herokuapp.com/feedback/`)
+    fetch(`https://json-server-one-sandy.vercel.app/feedback/`)
     .then(res=>res.json())
-    .then(data=>setFeedback(data))
+    .then(data=>setFeedback(data))  
 
  },[])
 
  const cards=feedbacks.map(feedback=>{
     return (
     <div key={feedback.id} className="feedbackCard" >
-        <h1>{feedback.rating}</h1>
+        {<HalfRating/>}
         <p>{feedback.comment}</p>
         <img src={feedback.imgUrl} alt='img' />
         <p>{feedback.name}</p>
@@ -41,7 +42,7 @@ function Home() {
     setFeedback(newfeedbacks)
     console.log('This is newfeedback:',newfeedbacks)
     
-    fetch(`https://hemingways-backend.herokuapp.com/feedback/${e.target.id}`,{
+    fetch(`https://json-server-one-sandy.vercel.app/feedback/${e.target.id}`,{
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +55,7 @@ function Home() {
     return (
         <div className='container1'>
             <div className='container2'>
-                <img src={img} alt="resort" />
+                <img src={img} alt="resort" id='resortimg'/>
             </div>
             <div className="container">
                 <div className='container3'>
@@ -75,7 +76,7 @@ function Home() {
                     <h1>FOR DISCRETION</h1>
                     <h2>AND CONVENIENCE</h2>
                     <button className='btn'>BUTLER SERVICE</button>
-            </div>
+                </div>
 
             </div>
             {/*  Rooms  */}

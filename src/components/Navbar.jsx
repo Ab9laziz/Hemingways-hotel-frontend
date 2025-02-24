@@ -8,7 +8,8 @@ function Navbar(){
 
     return(
         <nav>
-            <div><NavLink   to="/" id='img-navlink'>
+            <div>
+            <NavLink   to="/" id='img-navlink'>
                 <img src={img} alt="logo" id='logo'/>
             </NavLink>
             </div>

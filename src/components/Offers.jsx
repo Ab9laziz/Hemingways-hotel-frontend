@@ -6,7 +6,7 @@ import "../css/style.css"
 function Offers(){
 const [offers, setOffer]=useState([]);
 useEffect(()=>{
-    fetch('https://hemingways-backend.herokuapp.com/offers')
+    fetch('https://json-server-one-sandy.vercel.app/offers')
     .then(res=>res.json())
     .then(data=>setOffer(data))
 },[])
